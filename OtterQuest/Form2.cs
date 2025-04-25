@@ -54,9 +54,11 @@ namespace OtterQuest
 
         }
 
+        private byte[] restoreNoCell;
         private void noCellCostCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            Injects.NoCellCost(noCellCostCheckBox.Checked);
+            // The first check sets it on.. Restore value is saved. The next check sets it off. It is restored.
+            restoreNoCell = Injects.PatchMemory(WindowsInfo.baseAddress + 0x13E99FA, noCellCostCheckBox.Checked ? Injects.nopPayload : restoreNoCell );
         }
     }
 }

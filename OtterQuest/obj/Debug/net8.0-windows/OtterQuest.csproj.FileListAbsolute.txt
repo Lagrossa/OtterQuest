@@ -35,3 +35,4 @@ C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\refint\O
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.pdb
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.genruntimeconfig.cache
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\ref\OtterQuest.dll
+C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.sourcelink.json

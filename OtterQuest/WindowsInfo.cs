@@ -37,7 +37,7 @@ namespace OtterQuest
         {
             // Get the Process to manipulate memory.
             Process[] rq = Process.GetProcessesByName(processName);
-            if(rq.Length < 1) { Debug.WriteLine("Nothing Found"); return false; }
+            if (rq.Length < 1) { Debug.WriteLine("Nothing Found"); return false; }
             rqProcess = rq[0];
             if (rqProcess is null) { return false; }
             return true;
@@ -59,5 +59,13 @@ namespace OtterQuest
             baseAddress = rqProcess.MainModule.BaseAddress;
             return true;
         }
+
+        // I will be using pointer chains... I will need to create a way to dereference them.
+        // This should be fun.
+
+        /*public IntPtr PointerDereference(IntPtr chain)
+        {
+
+        }*/
     }
 }
