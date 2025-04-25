@@ -16,6 +16,7 @@ namespace OtterQuest
         // FORMAT. ProcessName -> PID -> Process -> Handle -> R/W Memory?
         internal static string processName = "RoboQuest-Win64-Shipping";
         internal static Process? rqProcess;
+        internal static IntPtr baseAddress;
         /*
             So... How did I settle on IntPtr for the handle?
 
@@ -55,7 +56,7 @@ namespace OtterQuest
             // OpenProcess uses DWORD, which they define as a 32bit unsigned int. We will use uint.
 
             rqHandle = OpenProcess((uint)0x1F0FFF, false, rqProcess.Id);
-            
+            baseAddress = rqProcess.MainModule.BaseAddress;
             return true;
         }
     }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\OtterQuest.csproj": {}
+    "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\OtterQuest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\OtterQuest.csproj": {
+    "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\OtterQuest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\OtterQuest.csproj",
+        "projectUniqueName": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\OtterQuest.csproj",
         "projectName": "OtterQuest",
-        "projectPath": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\OtterQuest.csproj",
-        "packagesPath": "C:\\Users\\Renata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\obj\\",
+        "projectPath": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\OtterQuest.csproj",
+        "packagesPath": "C:\\Users\\yanni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Renata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yanni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
