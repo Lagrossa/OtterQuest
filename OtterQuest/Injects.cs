@@ -18,15 +18,15 @@ namespace OtterQuest
         // I will be breaking up my pointers based on how close they are in memory.
 
         /// --------------------------------------
-        IntPtr energyCellsAddr;
-        IntPtr smithingTokenAddr;
-        IntPtr goldenJarAddr;
+        static IntPtr energyCellsAddr;
+        static IntPtr smithingTokenAddr;
+        static IntPtr goldenJarAddr;
         /// --------------------------------------
 
         /// 
         /// --------------------------------------
-        IntPtr rerollAddr;
-        IntPtr perksAddr;
+        static IntPtr rerollAddr;
+        static IntPtr perksAddr;
         /// --------------------------------------
 
         #endregion
@@ -62,7 +62,13 @@ namespace OtterQuest
 
         public static void PopulateAddresses()
         {
+            Console.WriteLine("");
+            
+            unsafe
+            {
 
+            }
+            IntPtr chain1 = *(WindowsInfo.baseAddress + 0x0548FF38);
         }
         #endregion
     }
