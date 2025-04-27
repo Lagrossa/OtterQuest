@@ -11,12 +11,13 @@ using System.Security;
 
 namespace OtterQuest
 {
+    // This class manages WinAPI calls and related functions.
     internal class WindowsInfo
     {
         // FORMAT. ProcessName -> PID -> Process -> Handle -> R/W Memory?
-        internal static string processName = "RoboQuest-Win64-Shipping";
-        internal static Process? rqProcess;
-        internal static IntPtr baseAddress;
+        internal static string processName { get; private set; }
+        internal static Process? rqProcess { get; private set; }
+        internal static IntPtr baseAddress { get; private set; }
         /*
             So... How did I settle on IntPtr for the handle?
 
@@ -31,10 +32,14 @@ namespace OtterQuest
             I will not be using nint in the foreseeable future, IntPtr is more specific and made more sense to
             me anyway...
         */
-        internal static IntPtr rqHandle;
+        internal static IntPtr rqHandle { get; private set; }
 
         public static bool PopulateProcess()
         {
+            // Maybe allow the user to CHOOSE a process? That might be interesting.
+            // But that also opens the door for user error.
+            processName = "RoboQuest-Win64-Shipping";
+
             // Get the Process to manipulate memory.
             Process[] rq = Process.GetProcessesByName(processName);
             if (rq.Length < 1) { Debug.WriteLine("Nothing Found"); return false; }
@@ -44,11 +49,26 @@ namespace OtterQuest
             // Easier than expected!
         }
 
+
+        #region Windows Imports
+
+        // Regarding the access modifiers of these functions..
+        // 
+
+        // https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory
+        // These method signatures were painful to fix.
+        [DllImport("kernel32.dll")]
+        internal static extern bool ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
+
+        [DllImport("kernel32.dll")]
+        internal static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesWritten);
+
         // Import kernel32's OpenProcess
         // https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess
+        // This returns a 'IntPtr' so our Handle must match the type.
         [DllImport("kernel32.dll")]
-        static extern IntPtr OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);
-        // This returns a 'nint' so our Handle must match the type.
+        static extern IntPtr OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);        
+        #endregion
 
         public static bool PopulateHandle()
         {
@@ -60,12 +80,28 @@ namespace OtterQuest
             return true;
         }
 
-        // I will be using pointer chains... I will need to create a way to dereference them.
-        // This should be fun.
-
-        /*public IntPtr PointerDereference(IntPtr chain)
+        // This function will be to "Dereference" and sort of evaluate pointer chains.
+        // A chain will look like:
+        // *(*(*(baseModule + initialOffset) + offsets[0]) + offsets[1]) . . . so on.
+        // That is to say, an offset is added to (baseAddr + initialOffset) and then that is a pointer.
+        // We read the memory of that new pointer and add the next offset. 
+        /*public IntPtr DerefPtrChain(IntPtr baseAddr, int initialOffset, int[] offsets)
         {
-
+            IntPtr newBase = baseAddr + initialOffset;
+            int bytesRead = 0;
+            unsafe
+            {
+                byte[] buffer = new byte[sizeof(IntPtr)];
+                foreach (int offset in offsets)
+                {
+                    ReadProcessMemory(rqHandle, newBase, buffer, sizeof(IntPtr), ref bytesRead);
+                    bu
+                }
+            }
         }*/
+
+
+
+
     }
 }

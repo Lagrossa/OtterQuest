@@ -31,16 +31,6 @@ namespace OtterQuest
 
         #endregion
 
-        #region Windows Imports
-        // https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory
-        // These method signatures were painful to fix.
-        [DllImport("kernel32.dll")]
-        public static extern bool ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);
-        
-        [DllImport("kernel32.dll")]
-        static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesWritten);
-        #endregion
-
         #region Inject Methods
         // We'll just use a dict to store offsets to our patches
 
@@ -54,13 +44,13 @@ namespace OtterQuest
             int readBytes = 0; // Not really necessary? Could just use null.
 
             // restore stores the the read bytes.
-            bool readSucceed = ReadProcessMemory(WindowsInfo.rqHandle, patchAddr, restore, restore.Length, ref readBytes);
+            bool readSucceed = WindowsInfo.ReadProcessMemory(WindowsInfo.rqHandle, patchAddr, restore, restore.Length, ref readBytes);
             if (!readSucceed) { return new byte[payload.Length]; }
-            WriteProcessMemory(WindowsInfo.rqHandle, patchAddr, payload, payload.Length, ref readBytes);
+            WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, patchAddr, payload, payload.Length, ref readBytes);
             return restore;
         }
 
-        public static void PopulateAddresses()
+        /*public static void PopulateAddresses()
         {
             Console.WriteLine("");
             
@@ -69,7 +59,7 @@ namespace OtterQuest
 
             }
             IntPtr chain1 = *(WindowsInfo.baseAddress + 0x0548FF38);
-        }
+        }*/
         #endregion
     }
 }
