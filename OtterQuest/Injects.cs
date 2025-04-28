@@ -12,7 +12,20 @@ namespace OtterQuest
     // I could use a Singleton here..? I will just be using static methods
     internal class Injects
     {
+        #region Inject Data
         public static byte[] nopPayload = { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
+
+        // We'll just use a dict to store offsets to our patches
+        public enum OffsetName { ENERGYCELL, REROLLS }
+        public static Dictionary<OffsetName, (int initialOffset, int[] offsetArray)> offsetData = new Dictionary<OffsetName, (int initialOffset, int[] offsetArray)>()
+        {
+            {OffsetName.ENERGYCELL, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x3950]) },
+            {OffsetName.REROLLS, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x2fc8]) }
+
+
+
+        };
+        #endregion
 
         #region Addresses
         // I will be breaking up my pointers based on how close they are in memory.
@@ -32,8 +45,6 @@ namespace OtterQuest
         #endregion
 
         #region Inject Methods
-        // We'll just use a dict to store offsets to our patches
-
 
         // This method uses an AOB Injection.. May not be suitable for all Injects.
         // All AOB injections will be done here.
@@ -50,11 +61,12 @@ namespace OtterQuest
             return restore;
         }
         
-        public static void SetEnergyCell(int amount)
+        public static void SetData(int amount, OffsetName offsetName)
         {
-            IntPtr eCellsAddr = WindowsInfo.DerefPtrChain(WindowsInfo.baseAddress, 0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x3950]);
+            (int initialOffset, int[] offsetArray) data = offsetData[offsetName];
+            IntPtr addr = WindowsInfo.DerefPtrChain(WindowsInfo.baseAddress, data.initialOffset, data.offsetArray);
             int bytesRead = 0;
-            WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, eCellsAddr, BitConverter.GetBytes(amount), sizeof(int), ref bytesRead);
+            WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, addr, BitConverter.GetBytes(amount), sizeof(int), ref bytesRead);
       
         }
 

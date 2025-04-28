@@ -44,10 +44,9 @@ namespace OtterQuest
             Program.forms[0].Show();
         }
 
-        private void setWrenchesButton_Click(object sender, EventArgs e)
+        private void setECellsButton_Click(object sender, EventArgs e)
         {
-            //Int32.TryParse(W)
-            Injects.SetEnergyCell(500);
+            PerformButtonDuties(eCellsTextbox, Injects.OffsetName.ENERGYCELL);
             return;
         }
 
@@ -65,7 +64,19 @@ namespace OtterQuest
 
         private void wrenchCountTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void setRerollsButton_Click(object sender, EventArgs e)
+        {
+            PerformButtonDuties(rerollsTextbox, Injects.OffsetName.REROLLS);
+        }
+
+        internal static void PerformButtonDuties(TextBox textBox, Injects.OffsetName offsetName)
+        {
+            Int32.TryParse(textBox.Text, out int amt);
+            Injects.SetData(Math.Min(amt, 9999), offsetName);
+            textBox.Text = ""; // Clear text box when done.
         }
     }
 }

@@ -32,13 +32,13 @@
             playerLabel = new Label();
             menuStrip1 = new MenuStrip();
             homeToolStripMenuItem = new ToolStripMenuItem();
-            wrenchCountTextBox = new TextBox();
+            eCellsTextbox = new TextBox();
             pictureBox1 = new PictureBox();
-            setWrenchesButton = new Button();
+            setECellsButton = new Button();
             infAmmoCheckBox = new CheckBox();
             noCellCostCheckBox = new CheckBox();
-            button2 = new Button();
-            textBox1 = new TextBox();
+            setRerollsButton = new Button();
+            rerollsTextbox = new TextBox();
             button3 = new Button();
             textBox2 = new TextBox();
             button4 = new Button();
@@ -82,15 +82,15 @@
             homeToolStripMenuItem.Text = "Home";
             homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
-            // wrenchCountTextBox
+            // eCellsTextbox
             // 
-            wrenchCountTextBox.Font = new Font("Segoe UI", 14F);
-            wrenchCountTextBox.Location = new Point(273, 132);
-            wrenchCountTextBox.Margin = new Padding(4, 5, 4, 5);
-            wrenchCountTextBox.Name = "wrenchCountTextBox";
-            wrenchCountTextBox.Size = new Size(187, 45);
-            wrenchCountTextBox.TabIndex = 4;
-            wrenchCountTextBox.TextChanged += wrenchCountTextBox_TextChanged;
+            eCellsTextbox.Font = new Font("Segoe UI", 14F);
+            eCellsTextbox.Location = new Point(273, 132);
+            eCellsTextbox.Margin = new Padding(4, 5, 4, 5);
+            eCellsTextbox.Name = "eCellsTextbox";
+            eCellsTextbox.Size = new Size(187, 45);
+            eCellsTextbox.TabIndex = 4;
+            eCellsTextbox.TextChanged += wrenchCountTextBox_TextChanged;
             // 
             // pictureBox1
             // 
@@ -103,23 +103,23 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // setWrenchesButton
+            // setECellsButton
             // 
-            setWrenchesButton.BackColor = Color.FromArgb(28, 28, 28);
-            setWrenchesButton.FlatAppearance.BorderSize = 0;
-            setWrenchesButton.FlatStyle = FlatStyle.Flat;
-            setWrenchesButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            setWrenchesButton.ForeColor = SystemColors.ControlLightLight;
-            setWrenchesButton.Location = new Point(17, 123);
-            setWrenchesButton.Margin = new Padding(4, 5, 4, 5);
-            setWrenchesButton.Name = "setWrenchesButton";
-            setWrenchesButton.Size = new Size(248, 67);
-            setWrenchesButton.TabIndex = 6;
-            setWrenchesButton.TabStop = false;
-            setWrenchesButton.Text = "Set ECells";
-            setWrenchesButton.TextAlign = ContentAlignment.MiddleLeft;
-            setWrenchesButton.UseVisualStyleBackColor = false;
-            setWrenchesButton.Click += setWrenchesButton_Click;
+            setECellsButton.BackColor = Color.FromArgb(28, 28, 28);
+            setECellsButton.FlatAppearance.BorderSize = 0;
+            setECellsButton.FlatStyle = FlatStyle.Flat;
+            setECellsButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            setECellsButton.ForeColor = SystemColors.ControlLightLight;
+            setECellsButton.Location = new Point(17, 123);
+            setECellsButton.Margin = new Padding(4, 5, 4, 5);
+            setECellsButton.Name = "setECellsButton";
+            setECellsButton.Size = new Size(248, 67);
+            setECellsButton.TabIndex = 6;
+            setECellsButton.TabStop = false;
+            setECellsButton.Text = "Set ECells";
+            setECellsButton.TextAlign = ContentAlignment.MiddleLeft;
+            setECellsButton.UseVisualStyleBackColor = false;
+            setECellsButton.Click += setECellsButton_Click;
             // 
             // infAmmoCheckBox
             // 
@@ -155,31 +155,32 @@
             noCellCostCheckBox.UseVisualStyleBackColor = true;
             noCellCostCheckBox.CheckedChanged += noCellCostCheckBox_CheckedChanged;
             // 
-            // button2
+            // setRerollsButton
             // 
-            button2.BackColor = Color.FromArgb(28, 28, 28);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(17, 200);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(248, 67);
-            button2.TabIndex = 10;
-            button2.TabStop = false;
-            button2.Text = "Set Wrenches";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = false;
+            setRerollsButton.BackColor = Color.FromArgb(28, 28, 28);
+            setRerollsButton.FlatAppearance.BorderSize = 0;
+            setRerollsButton.FlatStyle = FlatStyle.Flat;
+            setRerollsButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            setRerollsButton.ForeColor = SystemColors.ControlLightLight;
+            setRerollsButton.Location = new Point(17, 200);
+            setRerollsButton.Margin = new Padding(4, 5, 4, 5);
+            setRerollsButton.Name = "setRerollsButton";
+            setRerollsButton.Size = new Size(248, 67);
+            setRerollsButton.TabIndex = 10;
+            setRerollsButton.TabStop = false;
+            setRerollsButton.Text = "Set Rerolls";
+            setRerollsButton.TextAlign = ContentAlignment.MiddleLeft;
+            setRerollsButton.UseVisualStyleBackColor = false;
+            setRerollsButton.Click += setRerollsButton_Click;
             // 
-            // textBox1
+            // rerollsTextbox
             // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(273, 208);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(187, 45);
-            textBox1.TabIndex = 9;
+            rerollsTextbox.Font = new Font("Segoe UI", 14F);
+            rerollsTextbox.Location = new Point(273, 208);
+            rerollsTextbox.Margin = new Padding(4, 5, 4, 5);
+            rerollsTextbox.Name = "rerollsTextbox";
+            rerollsTextbox.Size = new Size(187, 45);
+            rerollsTextbox.TabIndex = 9;
             // 
             // button3
             // 
@@ -299,13 +300,13 @@
             Controls.Add(textBox3);
             Controls.Add(button3);
             Controls.Add(textBox2);
-            Controls.Add(button2);
-            Controls.Add(textBox1);
+            Controls.Add(setRerollsButton);
+            Controls.Add(rerollsTextbox);
             Controls.Add(noCellCostCheckBox);
             Controls.Add(infAmmoCheckBox);
-            Controls.Add(setWrenchesButton);
+            Controls.Add(setECellsButton);
             Controls.Add(pictureBox1);
-            Controls.Add(wrenchCountTextBox);
+            Controls.Add(eCellsTextbox);
             Controls.Add(playerLabel);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -325,15 +326,15 @@
         #endregion
         private Label playerLabel;
         private MenuStrip menuStrip1;
-        private TextBox wrenchCountTextBox;
+        private TextBox eCellsTextbox;
         private ToolStripMenuItem homeToolStripMenuItem;
         private PictureBox pictureBox1;
-        private Button setWrenchesButton;
+        private Button setECellsButton;
         private Button button1;
         private CheckBox infAmmoCheckBox;
         private CheckBox noCellCostCheckBox;
-        private Button button2;
-        private TextBox textBox1;
+        private Button setRerollsButton;
+        private TextBox rerollsTextbox;
         private Button button3;
         private TextBox textBox2;
         private Button button4;
