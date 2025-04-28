@@ -49,17 +49,15 @@ namespace OtterQuest
             WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, patchAddr, payload, payload.Length, ref readBytes);
             return restore;
         }
-
-        /*public static void PopulateAddresses()
+        
+        public static void SetEnergyCell(int amount)
         {
-            Console.WriteLine("");
-            
-            unsafe
-            {
+            IntPtr eCellsAddr = WindowsInfo.DerefPtrChain(WindowsInfo.baseAddress, 0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x3950]);
+            int bytesRead = 0;
+            WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, eCellsAddr, BitConverter.GetBytes(amount), sizeof(int), ref bytesRead);
+      
+        }
 
-            }
-            IntPtr chain1 = *(WindowsInfo.baseAddress + 0x0548FF38);
-        }*/
         #endregion
     }
 }

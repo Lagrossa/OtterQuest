@@ -12,6 +12,8 @@ using System.Security;
 namespace OtterQuest
 {
     // This class manages WinAPI calls and related functions.
+
+    //
     internal class WindowsInfo
     {
         // FORMAT. ProcessName -> PID -> Process -> Handle -> R/W Memory?
@@ -85,20 +87,34 @@ namespace OtterQuest
         // *(*(*(baseModule + initialOffset) + offsets[0]) + offsets[1]) . . . so on.
         // That is to say, an offset is added to (baseAddr + initialOffset) and then that is a pointer.
         // We read the memory of that new pointer and add the next offset. 
-        /*public IntPtr DerefPtrChain(IntPtr baseAddr, int initialOffset, int[] offsets)
+        public static IntPtr DerefPtrChain(IntPtr baseAddr, int initialOffset, int[] offsets)
         {
-            IntPtr newBase = baseAddr + initialOffset;
+            Debug.WriteLine($"Base Address is {baseAddr:x}");
+            IntPtr address = baseAddr + initialOffset;
             int bytesRead = 0;
             unsafe
             {
                 byte[] buffer = new byte[sizeof(IntPtr)];
                 foreach (int offset in offsets)
                 {
-                    ReadProcessMemory(rqHandle, newBase, buffer, sizeof(IntPtr), ref bytesRead);
-                    bu
+                    Debug.WriteLine($"{address:x}");
+                    ReadProcessMemory(rqHandle, address, buffer, sizeof(IntPtr), ref bytesRead);
+                /*  I thought I would have to debug this for hours.. After writing it to the console, all I needed to do differently
+                    was convert to Int64 instead of Int32!
+
+                    foreach (byte b in buffer)
+                    {
+                        Debug.Write($"{b:x}, ");
+                    }
+                    Debug.WriteLine("");
+                    
+                    Debug.WriteLine($"New Address? {(IntPtr)BitConverter.ToInt64(buffer):x}");
+                */
+                    address = (IntPtr)BitConverter.ToInt64(buffer) + offset;                    
                 }
+                return address;
             }
-        }*/
+        }
 
 
 

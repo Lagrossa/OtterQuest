@@ -46,6 +46,8 @@ namespace OtterQuest
 
         private void setWrenchesButton_Click(object sender, EventArgs e)
         {
+            //Int32.TryParse(W)
+            Injects.SetEnergyCell(500);
             return;
         }
 
@@ -58,7 +60,12 @@ namespace OtterQuest
         private void noCellCostCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             // The first check sets it on.. Restore value is saved. The next check sets it off. It is now in the original state.
-            restoreNoCell = Injects.PatchMemory(WindowsInfo.baseAddress + 0x13E99FA, noCellCostCheckBox.Checked ? Injects.nopPayload : restoreNoCell );
+            restoreNoCell = Injects.PatchMemory(WindowsInfo.baseAddress + 0x13E99FA, noCellCostCheckBox.Checked ? Injects.nopPayload : restoreNoCell);
+        }
+
+        private void wrenchCountTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

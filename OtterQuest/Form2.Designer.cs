@@ -90,6 +90,7 @@
             wrenchCountTextBox.Name = "wrenchCountTextBox";
             wrenchCountTextBox.Size = new Size(187, 45);
             wrenchCountTextBox.TabIndex = 4;
+            wrenchCountTextBox.TextChanged += wrenchCountTextBox_TextChanged;
             // 
             // pictureBox1
             // 
@@ -115,7 +116,7 @@
             setWrenchesButton.Size = new Size(248, 67);
             setWrenchesButton.TabIndex = 6;
             setWrenchesButton.TabStop = false;
-            setWrenchesButton.Text = "Set Wrenches";
+            setWrenchesButton.Text = "Set ECells";
             setWrenchesButton.TextAlign = ContentAlignment.MiddleLeft;
             setWrenchesButton.UseVisualStyleBackColor = false;
             setWrenchesButton.Click += setWrenchesButton_Click;
