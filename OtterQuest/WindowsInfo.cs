@@ -85,7 +85,7 @@ namespace OtterQuest
         // This function will be to "Dereference" and sort of evaluate pointer chains.
         // A chain will look like:
         // *(*(*(baseModule + initialOffset) + offsets[0]) + offsets[1]) . . . so on.
-        // That is to say, an offset is added to (baseAddr + initialOffset) and then that is a pointer.
+        // That is to say, an offset is added to (baseAddr + initialOffset). The bytes at that new location is a pointer.
         // We read the memory of that new pointer and add the next offset. 
         public static IntPtr DerefPtrChain(IntPtr baseAddr, int initialOffset, int[] offsets)
         {

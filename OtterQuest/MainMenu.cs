@@ -1,8 +1,8 @@
 namespace OtterQuest
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
             Program.forms.Add(this);
@@ -43,7 +43,7 @@ namespace OtterQuest
             this.Hide();
 
 
-            Form2 menuForm = new Form2();
+            PlayerMenu menuForm = new PlayerMenu();
             WindowsInfo.PopulateHandle();
             menuForm.Show();
         }

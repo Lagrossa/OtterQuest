@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OtterQuest
 {
-    public partial class Form2 : Form
+    public partial class PlayerMenu : Form
     {
-        public Form2()
+        public PlayerMenu()
         {
             InitializeComponent();
             Program.forms.Add(this);
@@ -46,7 +46,7 @@ namespace OtterQuest
 
         private void setECellsButton_Click(object sender, EventArgs e)
         {
-            PerformButtonDuties(eCellsTextbox, Injects.OffsetName.ENERGYCELL);
+            ButtonFunctionality.ButtonSetValues(eCellsTextbox, Injects.OffsetName.ENERGYCELL);
             return;
         }
 
@@ -69,14 +69,32 @@ namespace OtterQuest
 
         private void setRerollsButton_Click(object sender, EventArgs e)
         {
-            PerformButtonDuties(rerollsTextbox, Injects.OffsetName.REROLLS);
+            ButtonFunctionality.ButtonSetValues(rerollsTextbox, Injects.OffsetName.REROLL);
         }
 
-        internal static void PerformButtonDuties(TextBox textBox, Injects.OffsetName offsetName)
+        private void setGoldJarButton_Click(object sender, EventArgs e)
         {
-            Int32.TryParse(textBox.Text, out int amt);
-            Injects.SetData(Math.Min(amt, 9999), offsetName);
-            textBox.Text = ""; // Clear text box when done.
+            ButtonFunctionality.ButtonSetValues(goldJarTextbox, Injects.OffsetName.GOLDENJAR);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setPerksButton_Click(object sender, EventArgs e)
+        {
+            ButtonFunctionality.ButtonSetValues(perksTextbox, Injects.OffsetName.PERK);
+        }
+
+        private void setSmithTokenButton_Click(object sender, EventArgs e)
+        {
+            ButtonFunctionality.ButtonSetValues(smithTokenTextbox, Injects.OffsetName.SMITHTOKEN);
+        }
+
+        private void rangerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

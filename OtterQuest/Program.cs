@@ -25,7 +25,7 @@ namespace OtterQuest
              * with a fascination that I've always been too afraid to pursue.                                          */
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainMenu());
         }
     }
 }

@@ -16,32 +16,15 @@ namespace OtterQuest
         public static byte[] nopPayload = { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
 
         // We'll just use a dict to store offsets to our patches
-        public enum OffsetName { ENERGYCELL, REROLLS }
+        public enum OffsetName { ENERGYCELL, GOLDENJAR, REROLL, PERK, SMITHTOKEN }
         public static Dictionary<OffsetName, (int initialOffset, int[] offsetArray)> offsetData = new Dictionary<OffsetName, (int initialOffset, int[] offsetArray)>()
         {
             {OffsetName.ENERGYCELL, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x3950]) },
-            {OffsetName.REROLLS, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x2fc8]) }
-
-
-
+            {OffsetName.GOLDENJAR, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x396C]) },
+            {OffsetName.SMITHTOKEN, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x3968]) },
+            {OffsetName.REROLL, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x2fc8]) },
+            {OffsetName.PERK, (0x0548FF38, [0x100, 0x1588, 0x1E8C, 0xB1C, 0x210, 0x40, 0x2fd8]) }
         };
-        #endregion
-
-        #region Addresses
-        // I will be breaking up my pointers based on how close they are in memory.
-
-        /// --------------------------------------
-        static IntPtr energyCellsAddr;
-        static IntPtr smithingTokenAddr;
-        static IntPtr goldenJarAddr;
-        /// --------------------------------------
-
-        /// 
-        /// --------------------------------------
-        static IntPtr rerollAddr;
-        static IntPtr perksAddr;
-        /// --------------------------------------
-
         #endregion
 
         #region Inject Methods
@@ -60,7 +43,9 @@ namespace OtterQuest
             WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, patchAddr, payload, payload.Length, ref readBytes);
             return restore;
         }
-        
+
+        // INSTALL DETOUR / TRAMPOLINE?
+
         public static void SetData(int amount, OffsetName offsetName)
         {
             (int initialOffset, int[] offsetArray) data = offsetData[offsetName];
