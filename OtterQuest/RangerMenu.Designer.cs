@@ -36,7 +36,13 @@
             contextMenuStrip1 = new ContextMenuStrip(components);
             focusButton = new Button();
             focusTextbox = new TextBox();
+            whereToMenu = new MenuStrip();
+            homeToolStripMenuItem = new ToolStripMenuItem();
+            characterToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            playerToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            whereToMenu.SuspendLayout();
             SuspendLayout();
             // 
             // rangerLabel
@@ -98,12 +104,52 @@
             focusTextbox.TabIndex = 7;
             focusTextbox.TextChanged += focusTextbox_TextChanged;
             // 
+            // whereToMenu
+            // 
+            whereToMenu.Font = new Font("Determination Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            whereToMenu.ImageScalingSize = new Size(24, 24);
+            whereToMenu.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, characterToolStripMenuItem, playerToolStripMenuItem });
+            whereToMenu.Location = new Point(0, 0);
+            whereToMenu.Name = "whereToMenu";
+            whereToMenu.Size = new Size(800, 24);
+            whereToMenu.TabIndex = 9;
+            whereToMenu.Text = "menuStrip1";
+            // 
+            // homeToolStripMenuItem
+            // 
+            homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            homeToolStripMenuItem.Size = new Size(47, 20);
+            homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
+            // 
+            // characterToolStripMenuItem
+            // 
+            characterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            characterToolStripMenuItem.Name = "characterToolStripMenuItem";
+            characterToolStripMenuItem.Size = new Size(82, 20);
+            characterToolStripMenuItem.Text = "Character";
+            characterToolStripMenuItem.Click += characterToolStripMenuItem_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(116, 22);
+            toolStripMenuItem1.Text = "Ranger";
+            // 
+            // playerToolStripMenuItem
+            // 
+            playerToolStripMenuItem.Name = "playerToolStripMenuItem";
+            playerToolStripMenuItem.Size = new Size(61, 20);
+            playerToolStripMenuItem.Text = "Player";
+            playerToolStripMenuItem.Click += playerToolStripMenuItem_Click;
+            // 
             // RangerMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(28, 28, 28);
             ClientSize = new Size(800, 450);
+            Controls.Add(whereToMenu);
             Controls.Add(focusButton);
             Controls.Add(focusTextbox);
             Controls.Add(pictureBox1);
@@ -111,8 +157,11 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "RangerMenu";
-            Text = "Form2";
+            Text = "Ranger Menu";
+            Load += RangerMenu_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            whereToMenu.ResumeLayout(false);
+            whereToMenu.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,5 +174,10 @@
         private ContextMenuStrip contextMenuStrip1;
         private Button focusButton;
         private TextBox focusTextbox;
+        private MenuStrip whereToMenu;
+        private ToolStripMenuItem homeToolStripMenuItem;
+        private ToolStripMenuItem characterToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem playerToolStripMenuItem;
     }
 }

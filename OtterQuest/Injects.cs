@@ -46,13 +46,14 @@ namespace OtterQuest
             return restore;
         }
 
+        /* This did not work out for me.
         // Setup Detour / Trampoline / Codecave
         // Get Virtual Memory
         // Determine a location, patch x bytes with jmp + nops
         public static IntPtr DetourASM()
         {
             return WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (IntPtr)null, Injects.rangerFocusPayload.Length, 0x1000, 0x2000);
-        }
+        }*/
 
 
         public static void SetData(int amount, OffsetName offsetName)

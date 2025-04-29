@@ -3,19 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,12 +11,28 @@
       "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\windowsinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\buttonfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\buttonfunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\injects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\injects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\rangermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\playermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\otterquest\\playermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\playermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|c:\\users\\renata\\documents\\specialtopics2347\\otterquest\\otterquest\\rangermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84AA62AB-65E0-46F6-947D-CFC2573EE375}|OtterQuest\\OtterQuest.csproj|solutionrelative:otterquest\\rangermenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,115 +53,73 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\PlayerMenu.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs [Design]",
-              "RelativeToolTip": "OtterQuest\\PlayerMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:30:20.457Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\PlayerMenu.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
-              "RelativeToolTip": "OtterQuest\\PlayerMenu.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowGcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:15:49.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RangerMenu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.Designer.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.Designer.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.Designer.cs",
-              "RelativeToolTip": "OtterQuest\\RangerMenu.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:16:09.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Program.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\Program.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Program.cs",
-              "RelativeToolTip": "OtterQuest\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:20:23.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Injects.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Injects.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\Injects.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Injects.cs",
-              "RelativeToolTip": "OtterQuest\\Injects.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:16:48.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RangerMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.cs",
-              "RelativeToolTip": "OtterQuest\\RangerMenu.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAawC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:25:20.459Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WindowsInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\WindowsInfo.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\WindowsInfo.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\WindowsInfo.cs",
-              "RelativeToolTip": "OtterQuest\\WindowsInfo.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwEYAAAAjAAAAAAAAAA==",
+              "Title": "ButtonFunctionality.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\ButtonFunctionality.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\ButtonFunctionality.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\ButtonFunctionality.cs",
+              "RelativeToolTip": "OtterQuest\\ButtonFunctionality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T00:42:00.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs",
-              "RelativeDocumentMoniker": "OtterQuest\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs",
-              "RelativeToolTip": "OtterQuest\\MainMenu.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAswC8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T22:15:57.907Z",
+              "WhenOpened": "2025-04-29T03:56:28.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WindowsInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\WindowsInfo.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\WindowsInfo.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\WindowsInfo.cs",
+              "RelativeToolTip": "OtterQuest\\WindowsInfo.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:30:00.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Program.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\Program.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Program.cs",
+              "RelativeToolTip": "OtterQuest\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T02:59:05.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs*",
+              "RelativeToolTip": "OtterQuest\\MainMenu.cs*",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T02:58:27.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\PlayerMenu.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
+              "RelativeToolTip": "OtterQuest\\PlayerMenu.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T02:55:10.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RangerMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.cs",
               "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.cs",
@@ -173,14 +131,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs",
               "RelativeDocumentMoniker": "OtterQuest\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs [Design]",
-              "RelativeToolTip": "OtterQuest\\MainMenu.cs [Design]",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\MainMenu.cs [Design]*",
+              "RelativeToolTip": "OtterQuest\\MainMenu.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T22:15:52.345Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RangerMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\RangerMenu.cs",
+              "RelativeToolTip": "OtterQuest\\RangerMenu.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAD4v1oAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T02:55:52.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Injects.cs",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Injects.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\Injects.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\Injects.cs",
+              "RelativeToolTip": "OtterQuest\\Injects.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:29:59.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs",
+              "RelativeDocumentMoniker": "OtterQuest\\PlayerMenu.cs",
+              "ToolTip": "C:\\Users\\Renata\\Documents\\SpecialTopics2347\\OtterQuest\\OtterQuest\\PlayerMenu.cs [Design]",
+              "RelativeToolTip": "OtterQuest\\PlayerMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:30:20.457Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -35,6 +35,7 @@
             homeToolStripMenuItem = new ToolStripMenuItem();
             characterToolStripMenuItem = new ToolStripMenuItem();
             rangerToolStripMenuItem = new ToolStripMenuItem();
+            playerToolStripMenuItem = new ToolStripMenuItem();
             eCellsTextbox = new TextBox();
             pictureBox1 = new PictureBox();
             setECellsButton = new Button();
@@ -48,6 +49,7 @@
             smithTokenTextbox = new TextBox();
             noCellCostCheckBox = new CheckBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
+            label1 = new Label();
             whereToMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -57,10 +59,9 @@
             playerLabel.AutoSize = true;
             playerLabel.Font = new Font("Determination Mono", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             playerLabel.ForeColor = Color.Snow;
-            playerLabel.Location = new Point(17, 63);
-            playerLabel.Margin = new Padding(4, 0, 4, 0);
+            playerLabel.Location = new Point(12, 38);
             playerLabel.Name = "playerLabel";
-            playerLabel.Size = new Size(151, 43);
+            playerLabel.Size = new Size(97, 29);
             playerLabel.TabIndex = 2;
             playerLabel.Text = "Player";
             // 
@@ -68,18 +69,17 @@
             // 
             whereToMenu.Font = new Font("Determination Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             whereToMenu.ImageScalingSize = new Size(24, 24);
-            whereToMenu.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, characterToolStripMenuItem });
+            whereToMenu.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, characterToolStripMenuItem, playerToolStripMenuItem });
             whereToMenu.Location = new Point(0, 0);
             whereToMenu.Name = "whereToMenu";
-            whereToMenu.Padding = new Padding(9, 3, 0, 3);
-            whereToMenu.Size = new Size(1143, 32);
+            whereToMenu.Size = new Size(800, 24);
             whereToMenu.TabIndex = 3;
             whereToMenu.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            homeToolStripMenuItem.Size = new Size(70, 26);
+            homeToolStripMenuItem.Size = new Size(47, 20);
             homeToolStripMenuItem.Text = "Home";
             homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
@@ -87,33 +87,37 @@
             // 
             characterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rangerToolStripMenuItem });
             characterToolStripMenuItem.Name = "characterToolStripMenuItem";
-            characterToolStripMenuItem.Size = new Size(125, 26);
+            characterToolStripMenuItem.Size = new Size(82, 20);
             characterToolStripMenuItem.Text = "Character";
             // 
             // rangerToolStripMenuItem
             // 
             rangerToolStripMenuItem.Name = "rangerToolStripMenuItem";
-            rangerToolStripMenuItem.Size = new Size(176, 34);
+            rangerToolStripMenuItem.Size = new Size(116, 22);
             rangerToolStripMenuItem.Text = "Ranger";
             rangerToolStripMenuItem.Click += rangerToolStripMenuItem_Click;
+            // 
+            // playerToolStripMenuItem
+            // 
+            playerToolStripMenuItem.Name = "playerToolStripMenuItem";
+            playerToolStripMenuItem.Size = new Size(61, 20);
+            playerToolStripMenuItem.Text = "Player";
             // 
             // eCellsTextbox
             // 
             eCellsTextbox.Font = new Font("Segoe UI", 14F);
-            eCellsTextbox.Location = new Point(273, 132);
-            eCellsTextbox.Margin = new Padding(4, 5, 4, 5);
+            eCellsTextbox.Location = new Point(191, 79);
             eCellsTextbox.Name = "eCellsTextbox";
-            eCellsTextbox.Size = new Size(187, 45);
+            eCellsTextbox.Size = new Size(132, 32);
             eCellsTextbox.TabIndex = 4;
             eCellsTextbox.TextChanged += wrenchCountTextBox_TextChanged;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(629, 237);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(440, 142);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(501, 499);
+            pictureBox1.Size = new Size(351, 299);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -125,10 +129,9 @@
             setECellsButton.FlatStyle = FlatStyle.Flat;
             setECellsButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setECellsButton.ForeColor = SystemColors.ControlLightLight;
-            setECellsButton.Location = new Point(17, 123);
-            setECellsButton.Margin = new Padding(4, 5, 4, 5);
+            setECellsButton.Location = new Point(12, 74);
             setECellsButton.Name = "setECellsButton";
-            setECellsButton.Size = new Size(248, 67);
+            setECellsButton.Size = new Size(174, 40);
             setECellsButton.TabIndex = 6;
             setECellsButton.TabStop = false;
             setECellsButton.Text = "Set ECells";
@@ -143,10 +146,9 @@
             setRerollsButton.FlatStyle = FlatStyle.Flat;
             setRerollsButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setRerollsButton.ForeColor = SystemColors.ControlLightLight;
-            setRerollsButton.Location = new Point(17, 200);
-            setRerollsButton.Margin = new Padding(4, 5, 4, 5);
+            setRerollsButton.Location = new Point(12, 120);
             setRerollsButton.Name = "setRerollsButton";
-            setRerollsButton.Size = new Size(248, 67);
+            setRerollsButton.Size = new Size(174, 40);
             setRerollsButton.TabIndex = 10;
             setRerollsButton.TabStop = false;
             setRerollsButton.Text = "Set Rerolls";
@@ -157,10 +159,9 @@
             // rerollsTextbox
             // 
             rerollsTextbox.Font = new Font("Segoe UI", 14F);
-            rerollsTextbox.Location = new Point(273, 208);
-            rerollsTextbox.Margin = new Padding(4, 5, 4, 5);
+            rerollsTextbox.Location = new Point(191, 125);
             rerollsTextbox.Name = "rerollsTextbox";
-            rerollsTextbox.Size = new Size(187, 45);
+            rerollsTextbox.Size = new Size(132, 32);
             rerollsTextbox.TabIndex = 9;
             // 
             // setGoldJarButton
@@ -168,12 +169,11 @@
             setGoldJarButton.BackColor = Color.FromArgb(28, 28, 28);
             setGoldJarButton.FlatAppearance.BorderSize = 0;
             setGoldJarButton.FlatStyle = FlatStyle.Flat;
-            setGoldJarButton.Font = new Font("Determination Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            setGoldJarButton.Font = new Font("Determination Mono", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setGoldJarButton.ForeColor = SystemColors.ControlLightLight;
-            setGoldJarButton.Location = new Point(17, 277);
-            setGoldJarButton.Margin = new Padding(4, 5, 4, 5);
+            setGoldJarButton.Location = new Point(12, 166);
             setGoldJarButton.Name = "setGoldJarButton";
-            setGoldJarButton.Size = new Size(248, 67);
+            setGoldJarButton.Size = new Size(174, 40);
             setGoldJarButton.TabIndex = 12;
             setGoldJarButton.TabStop = false;
             setGoldJarButton.Text = "Set Crystal Powder";
@@ -184,10 +184,9 @@
             // goldJarTextbox
             // 
             goldJarTextbox.Font = new Font("Segoe UI", 14F);
-            goldJarTextbox.Location = new Point(273, 285);
-            goldJarTextbox.Margin = new Padding(4, 5, 4, 5);
+            goldJarTextbox.Location = new Point(191, 171);
             goldJarTextbox.Name = "goldJarTextbox";
-            goldJarTextbox.Size = new Size(187, 45);
+            goldJarTextbox.Size = new Size(132, 32);
             goldJarTextbox.TabIndex = 11;
             // 
             // setPerksButton
@@ -197,10 +196,9 @@
             setPerksButton.FlatStyle = FlatStyle.Flat;
             setPerksButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setPerksButton.ForeColor = SystemColors.ControlLightLight;
-            setPerksButton.Location = new Point(17, 353);
-            setPerksButton.Margin = new Padding(4, 5, 4, 5);
+            setPerksButton.Location = new Point(12, 212);
             setPerksButton.Name = "setPerksButton";
-            setPerksButton.Size = new Size(248, 67);
+            setPerksButton.Size = new Size(174, 40);
             setPerksButton.TabIndex = 14;
             setPerksButton.TabStop = false;
             setPerksButton.Text = "Set Perks";
@@ -211,10 +209,9 @@
             // perksTextbox
             // 
             perksTextbox.Font = new Font("Segoe UI", 14F);
-            perksTextbox.Location = new Point(273, 362);
-            perksTextbox.Margin = new Padding(4, 5, 4, 5);
+            perksTextbox.Location = new Point(191, 217);
             perksTextbox.Name = "perksTextbox";
-            perksTextbox.Size = new Size(187, 45);
+            perksTextbox.Size = new Size(132, 32);
             perksTextbox.TabIndex = 13;
             perksTextbox.TextChanged += textBox3_TextChanged;
             // 
@@ -225,10 +222,9 @@
             setSmithTokenButton.FlatStyle = FlatStyle.Flat;
             setSmithTokenButton.Font = new Font("Determination Mono", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setSmithTokenButton.ForeColor = SystemColors.ControlLightLight;
-            setSmithTokenButton.Location = new Point(17, 430);
-            setSmithTokenButton.Margin = new Padding(4, 5, 4, 5);
+            setSmithTokenButton.Location = new Point(12, 291);
             setSmithTokenButton.Name = "setSmithTokenButton";
-            setSmithTokenButton.Size = new Size(248, 67);
+            setSmithTokenButton.Size = new Size(174, 40);
             setSmithTokenButton.TabIndex = 16;
             setSmithTokenButton.TabStop = false;
             setSmithTokenButton.Text = "Set Smith Token";
@@ -239,10 +235,9 @@
             // smithTokenTextbox
             // 
             smithTokenTextbox.Font = new Font("Segoe UI", 14F);
-            smithTokenTextbox.Location = new Point(273, 438);
-            smithTokenTextbox.Margin = new Padding(4, 5, 4, 5);
+            smithTokenTextbox.Location = new Point(191, 294);
             smithTokenTextbox.Name = "smithTokenTextbox";
-            smithTokenTextbox.Size = new Size(187, 45);
+            smithTokenTextbox.Size = new Size(132, 32);
             smithTokenTextbox.TabIndex = 15;
             // 
             // noCellCostCheckBox
@@ -252,10 +247,9 @@
             noCellCostCheckBox.FlatStyle = FlatStyle.Flat;
             noCellCostCheckBox.Font = new Font("Determination Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             noCellCostCheckBox.ForeColor = Color.White;
-            noCellCostCheckBox.Location = new Point(17, 530);
-            noCellCostCheckBox.Margin = new Padding(4, 5, 4, 5);
+            noCellCostCheckBox.Location = new Point(12, 346);
             noCellCostCheckBox.Name = "noCellCostCheckBox";
-            noCellCostCheckBox.Size = new Size(291, 39);
+            noCellCostCheckBox.Size = new Size(191, 27);
             noCellCostCheckBox.TabIndex = 8;
             noCellCostCheckBox.Text = "No Cell Cost   ";
             noCellCostCheckBox.TextAlign = ContentAlignment.MiddleRight;
@@ -269,12 +263,24 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Determination Mono", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(12, 255);
+            label1.Name = "label1";
+            label1.Size = new Size(364, 14);
+            label1.TabIndex = 17;
+            label1.Text = "(Only use if you have 1 or more upgrades available)";
+            // 
             // PlayerMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(28, 28, 28);
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(setSmithTokenButton);
             Controls.Add(smithTokenTextbox);
             Controls.Add(setPerksButton);
@@ -291,10 +297,9 @@
             Controls.Add(whereToMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MainMenuStrip = whereToMenu;
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "PlayerMenu";
-            Text = "Form2";
+            Text = "Player Menu";
             Load += Form2_Load;
             whereToMenu.ResumeLayout(false);
             whereToMenu.PerformLayout();
@@ -323,5 +328,7 @@
         private ToolStripMenuItem characterToolStripMenuItem;
         private ToolStripMenuItem rangerToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem playerToolStripMenuItem;
+        private Label label1;
     }
 }

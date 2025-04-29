@@ -30,7 +30,7 @@ namespace OtterQuest
         private byte[] byteData;
         private void focusButton_Click(object sender, EventArgs e)
         {
-            
+
             // I was stuck on this for a few hours. I believe that my issue is that VirtualAllocEx is allocating memory that I cannot jump to within the 4 bytes of a given 0xE9 jmp instruction
             // I cannot figure out how to do this in a way that isn't sloppy.
             if (focusMemAddr == IntPtr.Zero)
@@ -50,7 +50,7 @@ namespace OtterQuest
             int offset = (int)(dstAddress - srcAddress - 5);
             Debug.WriteLine($"{IntPtr.Add(WindowsInfo.baseAddress, 0x13F62D2).ToString("X")} address of base+offset");
             Debug.WriteLine($"{offset.ToString("X")} address offset");
-            BitConverter.GetBytes(offset).CopyTo(payloadCreation, 1); 
+            BitConverter.GetBytes(offset).CopyTo(payloadCreation, 1);
 
             Injects.PatchMemory(WindowsInfo.baseAddress + 0x13F62D2, payloadCreation);
 
@@ -58,7 +58,7 @@ namespace OtterQuest
             // Same thing, replace 00 with the float to byte conversion from our textbox. 
             byte[] toInsertValue = [0xC7, 0x87, 0xBC, 0x8C, 0x00, 0x00, 00, 00, 00, 00];
             float.TryParse(focusTextbox.Text, out float result);
-            BitConverter.GetBytes(result).CopyTo(toInsertValue,6);
+            BitConverter.GetBytes(result).CopyTo(toInsertValue, 6);
             Injects.PatchMemory(focusMemAddr, toInsertValue);
 
             Injects.PatchMemory(focusMemAddr + 10, [0xE9, 0xCB, 0x62, 0x40, 0x01]);
@@ -67,6 +67,28 @@ namespace OtterQuest
         private void focusTextbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void RangerMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.forms[1].Show();
+        }
+
+        private void characterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.forms[0].Show();
         }
     }
 }

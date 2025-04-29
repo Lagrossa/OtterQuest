@@ -3,8 +3,8 @@ namespace OtterQuest
     internal static class Program
     {
 
-        // Not sure if there was another way to do this...
-        // I intuit that this may be plebian.
+        // Is there a downside to doing this instead as opposed to
+        // instantiating a new Form every time I swap screens?
         internal static List<Form> forms = new List<Form>();
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace OtterQuest
              * the form of me "hacking" a game. It is called RoboQuest and it is on Steam. I used version 1.6.0-353.
              * A majority of the work put into this project is done externally through software such as Ghidra,
              * Cheat Engine, ProcessHacker, etc. Nonetheless, this program combines my experiences in this class
-             * with a fascination that I've always been too afraid to pursue.                                          */
+             * with a fascination that I've always been too intimidated by to pursue.                                   */
 
             ApplicationConfiguration.Initialize();
             Application.Run(new MainMenu());
