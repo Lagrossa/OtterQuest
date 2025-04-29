@@ -18,7 +18,6 @@ C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.MainMenu.resources
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.PlayerMenu.resources
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.Properties.Resources.resources
-C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.Form2.resources
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.csproj.GenerateResource.cache
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.AssemblyInfoInputs.cache
@@ -38,3 +37,4 @@ C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\ref\Otte
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.MainMenu.resources
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.PlayerMenu.resources
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.RangerMenu.resources
+C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.RangerMenu.resources
