@@ -3,7 +3,6 @@ C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\bin\Debug\net8
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\bin\Debug\net8.0-windows\OtterQuest.runtimeconfig.json
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\bin\Debug\net8.0-windows\OtterQuest.dll
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\bin\Debug\net8.0-windows\OtterQuest.pdb
-C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.Form1.resources
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.Properties.Resources.resources
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.csproj.GenerateResource.cache
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,7 +14,6 @@ C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.pdb
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.genruntimeconfig.cache
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\ref\OtterQuest.dll
-C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.Form2.resources
 C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.sourcelink.json
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.MainMenu.resources
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.PlayerMenu.resources
@@ -37,3 +35,6 @@ C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\refint\O
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.pdb
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.genruntimeconfig.cache
 C:\Users\yanni\Documents\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\ref\OtterQuest.dll
+C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.MainMenu.resources
+C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.PlayerMenu.resources
+C:\Users\Renata\Documents\SpecialTopics2347\OtterQuest\OtterQuest\obj\Debug\net8.0-windows\OtterQuest.RangerMenu.resources

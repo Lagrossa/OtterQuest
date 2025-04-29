@@ -14,6 +14,7 @@ namespace OtterQuest
     {
         #region Inject Data
         public static byte[] nopPayload = { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
+        public static byte[] rangerFocusPayload = {0xC7, 0x87, 0xBC, 0x8C, 0x00, 0x00, 00, 00, 00, 00};
 
         // We'll just use a dict to store offsets to our patches
         public enum OffsetName { ENERGYCELL, GOLDENJAR, REROLL, PERK, SMITHTOKEN }
@@ -39,12 +40,20 @@ namespace OtterQuest
 
             // restore stores the the read bytes.
             bool readSucceed = WindowsInfo.ReadProcessMemory(WindowsInfo.rqHandle, patchAddr, restore, restore.Length, ref readBytes);
+            //Debug.WriteLine(readSucceed);
             if (!readSucceed) { return new byte[payload.Length]; }
             WindowsInfo.WriteProcessMemory(WindowsInfo.rqHandle, patchAddr, payload, payload.Length, ref readBytes);
             return restore;
         }
 
-        // INSTALL DETOUR / TRAMPOLINE?
+        // Setup Detour / Trampoline / Codecave
+        // Get Virtual Memory
+        // Determine a location, patch x bytes with jmp + nops
+        public static IntPtr DetourASM()
+        {
+            return WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (IntPtr)null, Injects.rangerFocusPayload.Length, 0x1000, 0x2000);
+        }
+
 
         public static void SetData(int amount, OffsetName offsetName)
         {

@@ -1,6 +1,6 @@
 ﻿namespace OtterQuest
 {
-    partial class Form2
+    partial class RangerMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangerMenu));
             rangerLabel = new Label();
             rangerToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            setFocusButton = new Button();
+            focusButton = new Button();
             focusTextbox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -44,10 +44,9 @@
             rangerLabel.AutoSize = true;
             rangerLabel.Font = new Font("Determination Mono", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rangerLabel.ForeColor = Color.Snow;
-            rangerLabel.Location = new Point(17, 63);
-            rangerLabel.Margin = new Padding(4, 0, 4, 0);
+            rangerLabel.Location = new Point(12, 38);
             rangerLabel.Name = "rangerLabel";
-            rangerLabel.Size = new Size(151, 43);
+            rangerLabel.Size = new Size(97, 29);
             rangerLabel.TabIndex = 2;
             rangerLabel.Text = "Ranger";
             rangerLabel.Click += playerLabel_Click;
@@ -60,10 +59,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(629, 237);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(440, 142);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(501, 499);
+            pictureBox1.Size = new Size(351, 299);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -74,47 +72,45 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // setFocusButton
+            // focusButton
             // 
-            setFocusButton.BackColor = Color.FromArgb(28, 28, 28);
-            setFocusButton.FlatAppearance.BorderSize = 0;
-            setFocusButton.FlatStyle = FlatStyle.Flat;
-            setFocusButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            setFocusButton.ForeColor = SystemColors.ControlLightLight;
-            setFocusButton.Location = new Point(17, 145);
-            setFocusButton.Margin = new Padding(4, 5, 4, 5);
-            setFocusButton.Name = "setFocusButton";
-            setFocusButton.Size = new Size(248, 67);
-            setFocusButton.TabIndex = 8;
-            setFocusButton.TabStop = false;
-            setFocusButton.Text = "Perma-Focus";
-            setFocusButton.TextAlign = ContentAlignment.MiddleLeft;
-            setFocusButton.UseVisualStyleBackColor = false;
-            setFocusButton.Click += setECellsButton_Click_2;
+            focusButton.BackColor = Color.FromArgb(28, 28, 28);
+            focusButton.FlatAppearance.BorderSize = 0;
+            focusButton.FlatStyle = FlatStyle.Flat;
+            focusButton.Font = new Font("Determination Mono", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            focusButton.ForeColor = SystemColors.ControlLightLight;
+            focusButton.Location = new Point(12, 87);
+            focusButton.Name = "focusButton";
+            focusButton.Size = new Size(174, 40);
+            focusButton.TabIndex = 8;
+            focusButton.TabStop = false;
+            focusButton.Text = "Perma-Focus";
+            focusButton.TextAlign = ContentAlignment.MiddleLeft;
+            focusButton.UseVisualStyleBackColor = false;
+            focusButton.Click += focusButton_Click;
             // 
             // focusTextbox
             // 
             focusTextbox.Font = new Font("Segoe UI", 14F);
-            focusTextbox.Location = new Point(273, 154);
-            focusTextbox.Margin = new Padding(4, 5, 4, 5);
+            focusTextbox.Location = new Point(191, 92);
             focusTextbox.Name = "focusTextbox";
-            focusTextbox.Size = new Size(187, 45);
+            focusTextbox.Size = new Size(132, 32);
             focusTextbox.TabIndex = 7;
+            focusTextbox.TextChanged += focusTextbox_TextChanged;
             // 
-            // Form2
+            // RangerMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(28, 28, 28);
-            ClientSize = new Size(1143, 750);
-            Controls.Add(setFocusButton);
+            ClientSize = new Size(800, 450);
+            Controls.Add(focusButton);
             Controls.Add(focusTextbox);
             Controls.Add(pictureBox1);
             Controls.Add(rangerLabel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
-            Name = "Form2";
+            Name = "RangerMenu";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -127,7 +123,7 @@
         private Button button1;
         private ToolStripMenuItem rangerToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
-        private Button setFocusButton;
+        private Button focusButton;
         private TextBox focusTextbox;
     }
 }

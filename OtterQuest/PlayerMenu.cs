@@ -94,7 +94,12 @@ namespace OtterQuest
 
         private void rangerToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+
+            RangerMenu rangerForm = new RangerMenu();
+            WindowsInfo.PopulateHandle();
+            rangerForm.Show();
         }
     }
 }

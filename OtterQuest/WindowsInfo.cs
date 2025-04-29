@@ -69,7 +69,10 @@ namespace OtterQuest
         // https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess
         // This returns a 'IntPtr' so our Handle must match the type.
         [DllImport("kernel32.dll")]
-        static extern IntPtr OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);        
+        internal static extern IntPtr OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);
+
+        [DllImport("kernel32.dll")]
+        internal static extern IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, int dwSize, uint flAllocationType, uint flProtect);   
         #endregion
 
         public static bool PopulateHandle()
@@ -89,7 +92,7 @@ namespace OtterQuest
         // We read the memory of that new pointer and add the next offset. 
         public static IntPtr DerefPtrChain(IntPtr baseAddr, int initialOffset, int[] offsets)
         {
-            Debug.WriteLine($"Base Address is {baseAddr:x}");
+            //Debug.WriteLine($"Base Address is {baseAddr:x}");
             IntPtr address = baseAddr + initialOffset;
             int bytesRead = 0;
             unsafe
@@ -97,7 +100,7 @@ namespace OtterQuest
                 byte[] buffer = new byte[sizeof(IntPtr)];
                 foreach (int offset in offsets)
                 {
-                    Debug.WriteLine($"{address:x}");
+                    //Debug.WriteLine($"{address:x}");
                     ReadProcessMemory(rqHandle, address, buffer, sizeof(IntPtr), ref bytesRead);
                 /*  I thought I would have to debug this for hours.. After writing it to the console, all I needed to do differently
                     was convert to Int64 instead of Int32!
