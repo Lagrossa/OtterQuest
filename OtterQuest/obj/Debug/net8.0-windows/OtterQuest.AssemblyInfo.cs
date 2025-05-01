@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OtterQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e660783b9efcde16f37c9a3234d5c5eb4700bfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bb3bdba59fe4fa1390233085406d94ebef67c24")]
 [assembly: System.Reflection.AssemblyProductAttribute("OtterQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OtterQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

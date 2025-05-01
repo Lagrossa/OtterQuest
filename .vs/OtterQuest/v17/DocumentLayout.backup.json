@@ -74,9 +74,9 @@
               "Title": "RangerMenu.cs",
               "DocumentMoniker": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs",
               "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.cs",
-              "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs*",
-              "RelativeToolTip": "OtterQuest\\RangerMenu.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwEEAAABlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs",
+              "RelativeToolTip": "OtterQuest\\RangerMenu.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA5wD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T18:25:20.459Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "OtterQuest\\RangerMenu.Designer.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAKAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:25:18.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T18:25:18.018Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "OtterQuest\\ButtonFunctionality.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:23:07.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T18:23:07.651Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "OtterQuest\\PlayerMenu.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:10:57.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T16:10:57.172Z"
             },
             {
               "$type": "Document",
@@ -143,8 +140,7 @@
               "RelativeToolTip": "OtterQuest\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:20:23.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:20:23.021Z"
             },
             {
               "$type": "Document",
@@ -156,8 +152,7 @@
               "RelativeToolTip": "OtterQuest\\WindowsInfo.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAzwFcAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:20:24.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:20:24.835Z"
             },
             {
               "$type": "Document",
@@ -182,8 +177,7 @@
               "RelativeToolTip": "OtterQuest\\Injects.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAAwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:16:48.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:16:48.476Z"
             },
             {
               "$type": "Document",
@@ -191,11 +185,10 @@
               "Title": "RangerMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs",
               "RelativeDocumentMoniker": "OtterQuest\\RangerMenu.cs",
-              "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs [Design]*",
-              "RelativeToolTip": "OtterQuest\\RangerMenu.cs [Design]*",
+              "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\RangerMenu.cs [Design]",
+              "RelativeToolTip": "OtterQuest\\RangerMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:19:55.993Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-28T18:19:55.993Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\PlayerMenu.cs [Design]",
               "RelativeToolTip": "OtterQuest\\PlayerMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:30:20.457Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-28T17:30:20.457Z"
             },
             {
               "$type": "Document",
@@ -218,8 +210,7 @@
               "ToolTip": "C:\\Users\\yanni\\Documents\\OtterQuest\\OtterQuest\\MainMenu.cs [Design]",
               "RelativeToolTip": "OtterQuest\\MainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T15:38:45.673Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-27T15:38:45.673Z"
             }
           ]
         }
