@@ -26,6 +26,7 @@ namespace OtterQuest
         }
 
         // This function is a mess, but I'm a bit low on time.
+        // It's also a bit 'broken' until I figure out how to jump to offsets greater than 4 bytes
         private IntPtr focusMemAddr = IntPtr.Zero;
         private byte[] byteData;
         private void focusButton_Click(object sender, EventArgs e)
