@@ -20,20 +20,6 @@ namespace OtterQuest
         internal static string processName { get; private set; }
         internal static Process? rqProcess { get; private set; }
         internal static IntPtr baseAddress { get; private set; }
-        /*
-            So... How did I settle on IntPtr for the handle?
-
-            Initially I used IntPtr, but I swapped to nint as per the recommendation of Visual Studio...
-
-            I knew I needed ReadProcessMemory and WriteProcessMemory,
-            but I did not know how to access these functions in C#.
-            I found documentation online that used their signature as 'int'. And to satisfy the compiler,
-            I had to cast my nint to int. Despite compiling, my code did not work and I struggled to debug
-            the issue for hours.
-
-            I will not be using nint in the foreseeable future, IntPtr is more specific and made more sense to
-            me anyway...
-        */
         internal static IntPtr rqHandle { get; private set; }
 
         public static bool PopulateProcess()

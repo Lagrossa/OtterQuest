@@ -38,13 +38,13 @@ namespace OtterQuest
                 // Create new address
                 // 0x1000 = MEM_COMMIT, 0x2000 = MEM_RESERVE, 0x40 = PAGE_EXECUTE_READWRITE
                 // Due to the reasons mentioned earlier.. I have a hard-coded value.
-                focusMemAddr = WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (nint)0x7FF7D02F0000, 20, 0x1000 | 0x2000, 0x40);
-                WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (nint)0x7FF6D02F0000, 20, 0x1000 | 0x2000, 0x40);
+                focusMemAddr = WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (nint)0x7FF7F02F0000, 20, 0x1000 | 0x2000, 0x40);
+                focusMemAddr = WindowsInfo.VirtualAllocEx(WindowsInfo.rqHandle, (nint)0x7FF7F02F0000, 20, 0x1000 | 0x2000, 0x40);
                 int bytesR = 0;
                 WindowsInfo.ReadProcessMemory(WindowsInfo.rqHandle, WindowsInfo.baseAddress + 0x13F62D2, byteData, 8, ref bytesR);
                 Debug.WriteLine($"{focusMemAddr.ToString("X")} address of newly allocated memory");
             }
-            focusMemAddr = (IntPtr)0x7FF7D02F0000;
+            focusMemAddr = (IntPtr)0x7FF7F02F0000;
             byte[] payloadCreation = { 0xE9, 00, 00, 00, 00, 0x90, 0x90, 0x90 };
 
             int offset = (int)(focusMemAddr - (WindowsInfo.baseAddress + 0x13F62D2 + 5));
@@ -59,13 +59,13 @@ namespace OtterQuest
             byte[] toInsertValue = [0xC7, 0x87, 0xBC, 0x8C, 0x00, 0x00, 00, 00, 00, 00];
             float.TryParse(focusTextbox.Text, out float result);
             BitConverter.GetBytes(result).CopyTo(toInsertValue, 6);
-            Injects.PatchMemory((IntPtr)0x7FF6D02F0000, toInsertValue);
+            Injects.PatchMemory((IntPtr)0x7FF7F02F0000, toInsertValue);
 
             // Jump back
             byte[] jumpBack = [0xE9, 0xCB, 0x62, 0x40, 0x01];
-            int jbOffset = (int)((WindowsInfo.baseAddress + 0x13F62D2) - (IntPtr)0x7FF6D02F0000) - 10;
+            int jbOffset = (int)((WindowsInfo.baseAddress + 0x13F62D2) - (IntPtr)0x7FF7F02F0000) - 10;
             BitConverter.GetBytes(jbOffset).CopyTo(jumpBack,1);
-            Injects.PatchMemory((IntPtr)0x7FF6D02F0000 + 10, jumpBack);
+            Injects.PatchMemory((IntPtr)0x7FF7F02F0000 + 10, jumpBack);
         }
 
         private void focusTextbox_TextChanged(object sender, EventArgs e)

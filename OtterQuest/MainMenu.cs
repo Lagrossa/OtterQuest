@@ -20,8 +20,6 @@ namespace OtterQuest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Let the pain begin.
-            // 1. We will Attach to process "RoboQuest.exe"
             bool pass = WindowsInfo.PopulateProcess();
             if (!pass)
             {
@@ -56,9 +54,6 @@ namespace OtterQuest
         // Exit Button
         private void button2_Click(object sender, EventArgs e)
         {
-            // This will be the first thing I program.
-            // Because everything else will give me hell.
-
             Application.Exit();
         }
 
